@@ -1,9 +1,0 @@
-* IronCubeStudios
-** Personal Website
-** Writtin in org mode with Doom Emacs
-
-* Sitemap
-| Title | Link   |
-|-------+--------|
-|BLOG   | [[https://ironcubestudios.github.io/blogs.html][<Link>]] |
-|-------+--------|
