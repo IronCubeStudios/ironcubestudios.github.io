@@ -1,0 +1,161 @@
+/* Gruvbox Dark Medium - Bare Bones CSS */
+
+:root {
+  --bg:        #282828;
+  --bg-soft:   #32302f;
+  --fg:        #ebdbb2;
+  --fg-soft:   #d5c4a1;
+  --red:       #fb4934;
+  --green:     #b8bb26;
+  --yellow:    #fabd2f;
+  --blue:      #83a598;
+  --purple:    #d3869b;
+  --aqua:      #8ec07c;
+  --gray:      #a89984;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: monospace, sans-serif;
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--aqua);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--yellow);
+  margin: 1rem 0 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--fg-soft);
+}
+
+ul, ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+code, pre {
+  font-family: monospace;
+  background-color: var(--bg-soft);
+  color: var(--green);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+pre {
+  padding: 1rem;
+  overflow: auto;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  border-left: 4px solid var(--gray);
+  padding-left: 1rem;
+  color: var(--gray);
+  margin: 1rem 0;
+}
+/* Hyperlinks */
+a {
+  color: var(--blue);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--aqua);
+  text-decoration: none;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  background-color: var(--bg-soft);
+  color: var(--fg-soft);
+}
+
+th, td {
+  border: 1px solid var(--gray);
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--bg);
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #3c3836; /* a softer bg for rows */
+}
+
+tr:hover {
+  background-color: #504945; /* hover highlight */
+}
+
+/* Gruvbox Nav Header Table (Scoped to .header only) */
+table.header {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #282828; /* --bg */
+  font-family: monospace;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: 2px solid #3c3836;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+table.header th {
+  padding: 1rem;
+  background-color: #3c3836; /* tab bg */
+  color: #ebdbb2;            /* --fg */
+  border-right: 1px solid #504945;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+table.header th:last-child {
+  border-right: none;
+}
+
+table.header th:hover {
+  background-color: #504945;
+  color: #fabd2f; /* --yellow */
+}
+
+/* Active Tab Highlight */
+table.header th.active {
+  background-color: #282828;
+  color: #b8bb26; /* --green */
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* Gruvbox General Hover Effect */
+.hoverable {
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.hoverable:hover {
+  background-color: #504945; /* Gruvbox dark hover bg */
+  color: #fabd2f;            /* Gruvbox yellow */
+}
